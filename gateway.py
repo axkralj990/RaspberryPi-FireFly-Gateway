@@ -366,8 +366,8 @@ try:
         client.on_connect = on_connect
         client.on_message = on_message
         
-        client.connect(orgID+".messaging.internetofthings.ibmcloud.com", 1883, 15)
         client.username_pw_set("use-token-auth", auth_token)
+        client.connect(orgID+".messaging.internetofthings.ibmcloud.com", 1883, 15)
     
     
     
